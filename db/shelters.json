@@ -2,16 +2,16 @@
   "shelter1": {
     "name": "shelter1",
     "location": "location1",
-    "imageUrl": "locationimage1"
+    "imageUrl": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Shelter1.jpg"
   },
   "shelter2": {
     "name": "shelter2",
     "location": "location2",
-    "imageUrl": "locationimage2"
+    "imageUrl": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Shelter2.png"
   },
   "shelter3": {
     "name": "shelter3",
     "location": "location3",
-    "imageUrl": "locationimage1"
+    "imageUrl": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Shelter3.jpg"
   }
 }
