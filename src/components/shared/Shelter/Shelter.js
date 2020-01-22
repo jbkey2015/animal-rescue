@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import shelterShape from '../../../helpers/propz/shelterShape';
 
@@ -17,7 +18,7 @@ class Shelter extends React.Component {
         <div className="card-body">
           <h5 className="card-title">{shelter.name}</h5>
           <p className="card-text">{shelter.location}</p>
-          <button className="btn btn-primary" onClick={this.setSelectedShelterId}>View Pets</button>
+          <Link className="btn btn-primary" to={`/shelter/${shelter.id}`}>View Shelter</Link>
         </div>
       </div>
     </div>

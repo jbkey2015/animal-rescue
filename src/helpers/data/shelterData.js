@@ -22,4 +22,6 @@ const getShelters = () => new Promise((resolve, reject) => {
     });
 });
 
-export default { getShelters };
+const getSingleShelter = (shelterId) => axios.get(`${baseUrl}/shelters/${shelterId}.json`);
+
+export default { getShelters, getSingleShelter };
