@@ -1,0 +1,17 @@
+{
+  "shelter1": {
+    "name": "shelter1",
+    "location": "location1",
+    "imageUrl": "locationimage1"
+  },
+  "shelter2": {
+    "name": "shelter2",
+    "location": "location2",
+    "imageUrl": "locationimage2"
+  },
+  "shelter3": {
+    "name": "shelter3",
+    "location": "location3",
+    "imageUrl": "locationimage1"
+  }
+}
