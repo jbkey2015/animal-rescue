@@ -2,7 +2,7 @@
   "pet1": {
     "name": "Piper",
     "shelterId": "Shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat1.png",
     "type": "Cat",
     "inDanger": "Yes",
     "fundsNeeded": "$200",
@@ -26,7 +26,7 @@
   "pet3": {
     "name": "Nigel",
     "shelterId": "Shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat2.jpg",
     "type": "Cat",
     "inDanger": "Yes",
     "fundsNeeded": "$250",
@@ -62,7 +62,7 @@
   "pet6": {
     "name": "Lucky",
     "shelterId": "Shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat3.jpg",
     "type": "Cat",
     "inDanger": "Yes",
     "fundsNeeded": "$100",
@@ -98,7 +98,7 @@
   "pet9": {
     "name": "Deuce",
     "shelterId": "Shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog1.jpg",
     "type": "Dog",
     "inDanger": "Yes",
     "fundsNeeded": "$300",
@@ -146,7 +146,7 @@
   "pet13": {
     "name": "Ziggy",
     "shelterId": "Shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog2.jpg",
     "type": "Dog",
     "inDanger": "No",
     "fundsNeeded": "$150",
@@ -206,7 +206,7 @@
   "pet18": {
     "name": "Jude",
     "shelterId": "Shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog4.jpg",
     "type": "Dog",
     "inDanger": "Yes",
     "fundsNeeded": "$400",
