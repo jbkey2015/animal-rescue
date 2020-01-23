@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './SingleShelter.scss';
 import shelterData from '../../../helpers/data/shelterData';
@@ -39,10 +40,13 @@ class SingleShelter extends React.Component {
 
   render() {
     const { shelter } = this.state;
+    const { shelterId } = this.props.match.params;
+
     return (
       <div className="SingleShelter">
         <h1>{shelter.name}</h1>
         <p>{shelter.location}</p>
+        <Link className="btn btn-primary" to={`/shelter/${shelterId}/pet/new`}>Add a Pet</Link>
         <div className="pets d-flex flex-wrap">
           { this.state.pets.map((pet) => <Pet key={pet.id} pet={pet} deleteSinglePet={this.deleteSinglePet}/>)}
         </div>

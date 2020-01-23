@@ -11,6 +11,7 @@ import MyNavbar from '../components/shared/MyNavbar/MyNavbar';
 import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
 import SingleShelter from '../components/pages/SingleShelter/SingleShelter';
+import PetForm from '../components/pages/PetForm/PetForm';
 
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
@@ -54,6 +55,7 @@ class App extends React.Component {
             <PrivateRoute path="/" exact component={Home} authed={authed}/>
             <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
             <PrivateRoute path="/shelter/:shelterId" exact component={SingleShelter} authed={authed}/>
+            <PrivateRoute path="/shelter/:shelterId/pet/new" exact component={PetForm} authed={authed}/>
           </Switch>
         </Router>
       </div>
