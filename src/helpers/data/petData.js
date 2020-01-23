@@ -26,4 +26,11 @@ const getSinglePet = (petId) => axios.get(`${baseUrl}/pets/${petId}.json`);
 
 const deletePet = (petId) => axios.delete(`${baseUrl}/pets/${petId}.json`);
 
-export default { getPetsByShelterId, getSinglePet, deletePet };
+const savePet = (newPet) => axios.post(`${baseUrl}/pets.json`, newPet);
+
+export default {
+  getPetsByShelterId,
+  getSinglePet,
+  deletePet,
+  savePet,
+};
