@@ -13,7 +13,7 @@
   "pet2": {
     "name": "Josie",
     "shelterId": "shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat4.jpg",
     "type": "Cat",
     "fundsNeeded": "$100",
     "availableSince": "01/10/2020",
@@ -35,7 +35,7 @@
   "pet4": {
     "name": "Turtle",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat5.jpg",
     "type": "Cat",
     "fundsNeeded": "$150",
     "availableSince": "01/10/2020",
@@ -101,7 +101,7 @@
   "pet10": {
     "name": "Queso",
     "shelterId": "shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog2.jpg",
     "type": "Dog",
     "fundsNeeded": "$150",
     "availableSince": "01/13/2020",
@@ -112,7 +112,7 @@
   "pet11": {
     "name": "chips",
     "shelterId": "shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog3.jpg",
     "type": "Dog",
     "fundsNeeded": "$150",
     "availableSince": "01/13/2020",
@@ -123,7 +123,7 @@
   "pet12": {
     "name": "Murdoch",
     "shelterId": "shelter1",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog4.jpg",
     "type": "Dog",
     "fundsNeeded": "$300",
     "availableSince": "01/06/2020",
@@ -134,7 +134,7 @@
   "pet13": {
     "name": "Ziggy",
     "shelterId": "shelter2",
-    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog2.jpg",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog5.jpg",
     "type": "Dog",
     "fundsNeeded": "$150",
     "availableSince": "01/06/2020",
@@ -145,7 +145,7 @@
   "pet14": {
     "name": "Jager",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog7.jpg",
     "type": "Dog",
     "fundsNeeded": "$300",
     "availableSince": "01/02/2020",
@@ -156,29 +156,29 @@
   "pet15": {
     "name": "Nala",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog9.jpg",
     "type": "Dog",
     "fundsNeeded": "$350",
     "availableSince": "01/09/2020",
     "age": "2 yrs",
     "gender": "Female",
-    "breed": "Pit Bull Mix"
+    "breed": "Husky Mix"
   },
   "pet16": {
     "name": "Jack",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog11.jpg",
     "type": "Dog",
     "fundsNeeded": "$100",
     "availableSince": "12/26/2019",
     "age": "3 yrs",
     "gender": "Male",
-    "breed": "Lab Mix"
+    "breed": "Pit Mix"
   },
   "pet17": {
     "name": "Molly",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog6.jpg",
     "type": "Dog",
     "fundsNeeded": "$400",
     "availableSince": "12/08/2019",
@@ -189,7 +189,7 @@
   "pet18": {
     "name": "Jude",
     "shelterId": "shelter3",
-    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog4.jpg",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog8.jpg",
     "type": "Dog",
     "fundsNeeded": "$400",
     "availableSince": "11/13/2019",
@@ -200,7 +200,7 @@
   "pet19": {
     "name": "Gaia",
     "shelterId": "shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog10.jpg",
     "type": "Dog",
     "fundsNeeded": "$400",
     "availableSince": "12/17/2019",
@@ -209,25 +209,25 @@
     "breed": "Boxer Mix"
   },
   "pet20": {
-    "name": "Shadow",
+    "name": "Jasper",
     "shelterId": "shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog12.jpg",
     "type": "Dog",
     "fundsNeeded": "$200",
     "availableSince": "01/07/2020",
     "age": "5 yrs",
     "gender": "Male",
-    "breed": "Lab Mix"
+    "breed": "Redbone Hound Mix"
   },
   "pet21": {
-    "name": "Shelldoor",
+    "name": "Hudson",
     "shelterId": "shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Dog13.jpg",
     "type": "Dog",
     "fundsNeeded": "$300",
     "availableSince": "12/15/2019",
-    "age": "1 yr",
+    "age": "6 yrs",
     "gender": "Male",
-    "breed": "Chinese Sharpei"
+    "breed": "Pit Mix"
   }
 }
