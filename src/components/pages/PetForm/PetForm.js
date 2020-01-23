@@ -9,6 +9,18 @@ class PetForm extends React.Component {
     petImage: '',
   }
 
+  componentDidMount() {
+    const { petId } = this.props.match.params;
+    if (petId) {
+      petData.getSinglePet(petId)
+        .then((request) => {
+          const pet = request.data;
+          this.setState({ petName: pet.name, petImage: pet.image });
+        })
+        .catch((err) => console.error('error with get single pet', err));
+    }
+  }
+
   nameChange = (e) => {
     e.preventDefault();
     this.setState({ petName: e.target.value });
@@ -17,6 +29,19 @@ class PetForm extends React.Component {
   imageChange = (e) => {
     e.preventDefault();
     this.setState({ petImage: e.target.value });
+  }
+
+  editPetEvent = (e) => {
+    const { shelterId, petId } = this.props.match.params;
+    e.preventDefault();
+    const editPet = {
+      name: this.state.petName,
+      image: this.state.petImage,
+      shelterId,
+    };
+    petData.editPet(petId, editPet)
+      .then(() => this.props.history.push(`/shelter/${shelterId}`))
+      .catch((err) => console.error('error with edit pet', err));
   }
 
   savePetEvent = (e) => {
@@ -34,6 +59,8 @@ class PetForm extends React.Component {
 
   render() {
     const { petName, petImage } = this.state;
+    const { petId } = this.props.match.params;
+
     return (
       <form className="PetForm">
         <div className="form-group">
@@ -56,7 +83,10 @@ class PetForm extends React.Component {
             onChange={this.imageChange}
           />
         </div>
-        <button className="btn btn-secondary" onClick={this.savePetEvent}>Save Pet</button>
+        { petId
+          ? <button className="btn btn-secondary" onClick={this.editPetEvent}>Edit Pet</button>
+          : <button className="btn btn-secondary" onClick={this.savePetEvent}>Save Pet</button>
+        }
       </form>
     );
   }

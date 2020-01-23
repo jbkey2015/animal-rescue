@@ -56,6 +56,7 @@ class App extends React.Component {
             <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
             <PrivateRoute path="/shelter/:shelterId" exact component={SingleShelter} authed={authed}/>
             <PrivateRoute path="/shelter/:shelterId/pet/new" exact component={PetForm} authed={authed}/>
+            <PrivateRoute path="/shelter/:shelterId/pet/:petId/edit" exact component={PetForm} authed={authed}/>
           </Switch>
         </Router>
       </div>
