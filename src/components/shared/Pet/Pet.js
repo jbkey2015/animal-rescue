@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import petShape from '../../../helpers/propz/petShape';
@@ -27,6 +28,7 @@ class Pet extends React.Component {
           <div className="card-body">
             <h5 className="card-title">{pet.name}</h5>
             <button className="btn btn-danger" onClick={this.deletePetEvent}>X</button>
+            <Link className="btn btn-warning" to={`/shelter/${pet.shelterId}/pet/${pet.id}/edit`}>Edit</Link>
           </div>
         </div>
       </div>
