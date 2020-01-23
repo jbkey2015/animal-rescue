@@ -22,4 +22,8 @@ const getPetsByShelterId = (shelterId) => new Promise((resolve, reject) => {
     });
 });
 
-export default { getPetsByShelterId };
+const getSinglePet = (petId) => axios.get(`${baseUrl}/pets/${petId}.json`);
+
+const deletePet = (petId) => axios.delete(`${baseUrl}/pets/${petId}.json`);
+
+export default { getPetsByShelterId, getSinglePet, deletePet };
