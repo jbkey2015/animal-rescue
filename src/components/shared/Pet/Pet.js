@@ -29,6 +29,7 @@ class Pet extends React.Component {
             <h5 className="card-title">{pet.name}</h5>
             <button className="btn btn-danger" onClick={this.deletePetEvent}>X</button>
             <Link className="btn btn-warning" to={`/shelter/${pet.shelterId}/pet/${pet.id}/edit`}>Edit</Link>
+            <Link className="btn btn-primary" to={`/shelter/${pet.shelterId}/pet/${pet.id}`}>View Pet</Link>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
 import SingleShelter from '../components/pages/SingleShelter/SingleShelter';
 import PetForm from '../components/pages/PetForm/PetForm';
+import SinglePet from '../components/pages/SinglePet/SinglePet';
 
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
@@ -57,6 +58,7 @@ class App extends React.Component {
             <PrivateRoute path="/shelter/:shelterId" exact component={SingleShelter} authed={authed}/>
             <PrivateRoute path="/shelter/:shelterId/pet/new" exact component={PetForm} authed={authed}/>
             <PrivateRoute path="/shelter/:shelterId/pet/:petId/edit" exact component={PetForm} authed={authed}/>
+            <PrivateRoute path="/shelter/:shelterId/pet/:petId" exact component={SinglePet} authed={authed}/>
           </Switch>
         </Router>
       </div>
