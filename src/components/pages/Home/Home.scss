@@ -1,3 +1,14 @@
-.Auth {
-  display: block;
+.Home {
+  background-image: url(https://images.boredomfiles.com/wp-content/uploads/sites/5/2016/08/adopteddog14.jpg);
+  padding-top: 55px;
+  height: 100vh;
+  overflow: auto;
+  .introInfo h1,
+  .introInfo h4,
+  .introInfo a {
+      color: rgb(208, 224, 224);
+  }
+  .introInfo a:hover {
+      color: white;
+  }
 }
