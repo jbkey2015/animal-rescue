@@ -7,6 +7,12 @@ class PetForm extends React.Component {
   state = {
     petName: '',
     petImage: '',
+    petType: '',
+    petFundsNeeded: '',
+    petAvailableSince: '',
+    petAge: '',
+    petGender: '',
+    petBreed: '',
   }
 
   componentDidMount() {
@@ -31,12 +37,48 @@ class PetForm extends React.Component {
     this.setState({ petImage: e.target.value });
   }
 
+  typeChange = (e) => {
+    e.preventDefault();
+    this.setState({ petType: e.target.value });
+  }
+
+  fundsNeededChange = (e) => {
+    e.preventDefault();
+    this.setState({ petFundsNeeded: e.target.value });
+  }
+
+  availableSinceChange = (e) => {
+    e.preventDefault();
+    this.setState({ petAvailableSince: e.target.value });
+  }
+
+  ageChange = (e) => {
+    e.preventDefault();
+    this.setState({ petAge: e.target.value });
+  }
+
+  genderChange = (e) => {
+    e.preventDefault();
+    this.setState({ petGender: e.target.value });
+  }
+
+  breedChange = (e) => {
+    e.preventDefault();
+    this.setState({ petbreed: e.target.value });
+  }
+
   editPetEvent = (e) => {
     const { shelterId, petId } = this.props.match.params;
     e.preventDefault();
     const editPet = {
       name: this.state.petName,
       image: this.state.petImage,
+      type: this.state.petType,
+      fundsNeeded: this.state.petFundsNeeded,
+      availableSince: this.state.petAvailableSince,
+      age: this.state.petAge,
+      gender: this.state.petGender,
+      breed: this.state.petBreed,
       shelterId,
     };
     petData.editPet(petId, editPet)
@@ -50,6 +92,12 @@ class PetForm extends React.Component {
     const newPet = {
       name: this.state.petName,
       image: this.state.petImage,
+      type: this.state.petType,
+      fundsNeeded: this.state.petFundsNeeded,
+      availableSince: this.state.petAvailableSince,
+      age: this.state.petAge,
+      gender: this.state.petGender,
+      breed: this.state.petBreed,
       shelterId,
     };
     petData.savePet(newPet)
@@ -58,7 +106,16 @@ class PetForm extends React.Component {
   }
 
   render() {
-    const { petName, petImage } = this.state;
+    const {
+      petName,
+      petImage,
+      petType,
+      petFundsNeeded,
+      petAvailableSince,
+      petAge,
+      petGender,
+      petBreed,
+    } = this.state;
     const { petId } = this.props.match.params;
 
     return (
@@ -81,6 +138,60 @@ class PetForm extends React.Component {
             placeholder="Enter pet image url"
             value={petImage}
             onChange={this.imageChange}
+          />
+          <label htmlFor="">Pet Type</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-type"
+            placeholder="Enter pet type"
+            value={petType}
+            onChange={this.typeChange}
+          />
+          <label htmlFor="">Pet Funds Needed</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-funds-needed"
+            placeholder="Enter pet funds needed"
+            value={petFundsNeeded}
+            onChange={this.fundsNeededChange}
+          />
+          <label htmlFor="">Pet Available Since</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-available-since"
+            placeholder="Enter Pet Available Since Date"
+            value={petAvailableSince}
+            onChange={this.availableSinceChange}
+          />
+          <label htmlFor="">Pet Age</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-age"
+            placeholder="Enter Pet Age"
+            value={petAge}
+            onChange={this.ageChange}
+          />
+          <label htmlFor="">Pet Gender</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-gender"
+            placeholder="Enter Pet Gender"
+            value={petGender}
+            onChange={this.genderChange}
+          />
+          <label htmlFor="">Pet Breed</label>
+          <input
+            type="text"
+            className="form-control"
+            id="pet-breed"
+            placeholder="Enter Pet Breed"
+            value={petBreed}
+            onChange={this.breedChange}
           />
         </div>
         { petId

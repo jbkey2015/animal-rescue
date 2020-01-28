@@ -24,12 +24,12 @@ class Pet extends React.Component {
     return (
       <div className="Pet col-3">
         <div className="card">
+          <button className="close d-flex justify-content-end" onClick={this.deletePetEvent}>X</button>
           <img src={pet.image} className="card-img-top" alt=""/>
           <div className="card-body">
             <h5 className="card-title">{pet.name}</h5>
-            <button className="btn btn-danger" onClick={this.deletePetEvent}>X</button>
             <Link className="btn btn-warning" to={`/shelter/${pet.shelterId}/pet/${pet.id}/edit`}>Edit</Link>
-            <Link className="btn btn-primary" to={`/shelter/${pet.shelterId}/pet/${pet.id}`}>View Pet</Link>
+            <Link className="btn btn-link" to={`/shelter/${pet.shelterId}/pet/${pet.id}`}>View {pet.name}</Link>
           </div>
         </div>
       </div>
