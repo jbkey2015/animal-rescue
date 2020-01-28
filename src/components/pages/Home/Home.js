@@ -18,9 +18,10 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-        <h1>Home</h1>
-        <div className="shelters d-flex flex-wrap">
-          {this.state.shelters.map((shelter) => <Shelter key={shelter.id} shelter={shelter} />)}
+        <div>
+          <div className="shelters d-flex flex-wrap">
+            {this.state.shelters.map((shelter) => <Shelter key={shelter.id} shelter={shelter} />)}
+          </div>
         </div>
       </div>
     );
