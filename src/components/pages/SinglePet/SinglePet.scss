@@ -1,14 +1,19 @@
 .SinglePet {
-  width: 50rem;
+  width: 40rem;
   background-color: white;
   text-align: center;
+  align-items: center;
   border-style: solid;
-  display: absolute;
-  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 30%;
    img {
-    height: 100%;
+    height: 70%;
     width: 100%;
   }
+}
+
+.BackgroundPet {
+  background-image: url(https://image.shutterstock.com/image-vector/vector-lettering-set-saying-about-600w-717178486.jpg);
+  background-repeat: repeat-cover;
+  background-size: 200px;
 }

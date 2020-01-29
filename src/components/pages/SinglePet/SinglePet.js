@@ -22,6 +22,7 @@ class SinglePet extends React.Component {
     const { pet } = this.state;
 
     return (
+      <div className="BackgroundPet">
       <div className="SinglePet">
         <h1>{pet.name}</h1>
         <img src={pet.image} className="card-img-top" alt=""/>
@@ -35,6 +36,7 @@ class SinglePet extends React.Component {
             <li class="list-group-item">{pet.name} is a {pet.breed}</li>
           </ul>
         </div>
+      </div>
       </div>
     );
   }
