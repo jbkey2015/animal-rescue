@@ -22,10 +22,21 @@ class SinglePet extends React.Component {
     const { pet } = this.state;
 
     return (
+      <div className="BackgroundPet">
       <div className="SinglePet">
-        <p>single pet</p>
         <h1>{pet.name}</h1>
         <img src={pet.image} className="card-img-top" alt=""/>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Type: {pet.type}</li>
+            <li class="list-group-item">Funds Needed to help {pet.name} get adopted: {pet.fundsNeeded}</li>
+            <li class="list-group-item">Available Since: {pet.availableSince}</li>
+            <li class="list-group-item">Age: {pet.age}</li>
+            <li class="list-group-item">Gender: {pet.gender}</li>
+            <li class="list-group-item">{pet.name} is a {pet.breed}</li>
+          </ul>
+        </div>
+      </div>
       </div>
     );
   }
