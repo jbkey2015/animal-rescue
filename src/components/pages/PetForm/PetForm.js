@@ -21,7 +21,16 @@ class PetForm extends React.Component {
       petData.getSinglePet(petId)
         .then((request) => {
           const pet = request.data;
-          this.setState({ petName: pet.name, petImage: pet.image });
+          this.setState({
+            petName: pet.name,
+            petImage: pet.image,
+            petType: pet.type,
+            petFundsNeeded: pet.fundsNeeded,
+            petAvailableSince: pet.availableSince,
+            petAge: pet.age,
+            petGender: pet.gender,
+            petBreed: pet.breed,
+          });
         })
         .catch((err) => console.error('error with get single pet', err));
     }
@@ -82,7 +91,7 @@ class PetForm extends React.Component {
       shelterId,
     };
     petData.editPet(petId, editPet)
-      .then(() => this.props.history.push(`/shelter/${shelterId}`))
+      .then(() => this.props.history.push(`/shelter/${shelterId}/pet/${petId}`))
       .catch((err) => console.error('error with edit pet', err));
   }
 
