@@ -46,7 +46,7 @@
   "pet5": {
     "name": "Star",
     "shelterId": "shelter2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat7.jpg",
     "type": "Cat",
     "fundsNeeded": "$100",
     "availableSince": "01/10/2020",
@@ -68,7 +68,7 @@
   "pet7": {
     "name": "Misty",
     "shelterId": "shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat9.jpg",
     "type": "Cat",
     "fundsNeeded": "$300",
     "availableSince": "01/04/2020",
@@ -79,7 +79,7 @@
   "pet8": {
     "name": "Sherlock",
     "shelterId": "shelter3",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/jbkey2015/animal-rescue/master/screenshots/Cat8.jpg",
     "type": "Cat",
     "fundsNeeded": "$200",
     "availableSince": "01/09/2020",
