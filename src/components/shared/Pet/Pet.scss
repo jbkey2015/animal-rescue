@@ -1,15 +1,15 @@
 .Pet {
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
-.card {
+.petcard {
   box-shadow: 3px 3px 5px 6px rgb(12, 4, 4);
 }
 
 img {
     width: auto;
-    height: 100%;
+    height: auto;
   }
   
 
@@ -19,8 +19,7 @@ img {
   }
 
 
-/* Style the button and place it in the middle of the container/image */
-.donation .donate {
+.Pets .delete {
   position: absolute;
   top: 1%;
   right: 1%;
@@ -29,5 +28,14 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 3px;
+}
+
+.btn-dark-moon {
+  background: #141E30;
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
+  color: #fff;
+  border: 3px solid #eee;
+  width: 200px
 }

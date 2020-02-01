@@ -1,10 +1,13 @@
 .SinglePet {
+  position: absolute;
   width: 40rem;
   background-color: white;
   text-align: center;
   align-items: center;
   border-style: solid;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  border-radius: 10px;
   margin-left: 30%;
    img {
     height: 100%;
