@@ -21,14 +21,13 @@ class Pet extends React.Component {
 
     return (
       <div className="Pet col-3">
-        <div className="card">
-          <div className="donation">
-          <button className="donate" onClick={this.deletePetEvent}>X</button>
+        <div className="petcard card">
+          <div className="Pets">
+          <button className="delete" onClick={this.deletePetEvent}>X</button>
           <img src={pet.image} className="card-img-top" alt=""/>
           <div className="card-body">
+            <Link className="col btn btn-dark-moon btn-rounded" to={`/shelter/${pet.shelterId}/pet/${pet.id}`}>View {pet.name}</Link>
           </div>
-            <h5 className="card-title">{pet.name}</h5>
-            <Link className="btn btn-link" to={`/shelter/${pet.shelterId}/pet/${pet.id}`}>View {pet.name}</Link>
           </div>
         </div>
       </div>

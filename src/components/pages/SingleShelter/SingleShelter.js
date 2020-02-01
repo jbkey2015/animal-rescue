@@ -44,7 +44,7 @@ class SingleShelter extends React.Component {
 
     return (
       <div className="SingleShelter">
-        <h1>{shelter.name}</h1>
+        <h1 className="shelterName">{shelter.name}</h1>
         <Link className="btn btn-primary" to={`/shelter/${shelterId}/pet/new`}>Add a Pet</Link>
         <div className="pets d-flex flex-wrap">
           { this.state.pets.map((pet) => <Pet key={pet.id} pet={pet} deleteSinglePet={this.deleteSinglePet}/>)}

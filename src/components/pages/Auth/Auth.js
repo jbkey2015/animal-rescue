@@ -14,7 +14,9 @@ class Auth extends React.Component {
   render() {
     return (
       <div className="Auth">
+      <div>
         <button className="btn btn-danger" onClick={this.loginClickEvent}>Login with Google</button>
+      </div>
       </div>
     );
   }
