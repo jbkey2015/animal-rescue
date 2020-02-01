@@ -33,6 +33,14 @@ class SinglePet extends React.Component {
       <div className="SinglePet">
         <h1 className="card-header">{pet.name}</h1>
         <img src={pet.image} className="card-img-top" alt=""/>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="jbk_1_tn@yahoo.com" />
+          <input type="hidden" name="item_name" value="Donations for animal rescues" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        </form>
+        <button className="btn btn-primary">Donate</button>
         <div className="card">
           <ul className="list-group list-group-flush">
             <li className="list-group-item">Type: {pet.type}</li>
