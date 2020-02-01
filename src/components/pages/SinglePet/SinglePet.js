@@ -40,11 +40,13 @@ class SinglePet extends React.Component {
           <input type="hidden" name="currency_code" value="USD" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         </form>
-        <button className="btn btn-primary">Donate</button>
         <div className="card">
           <ul className="list-group list-group-flush">
             <li className="list-group-item">Type: {pet.type}</li>
-            <li className="list-group-item">Funds Needed to help {pet.name} get adopted: {pet.fundsNeeded}</li>
+            <li className="list-group-item">
+              Funds Needed to help {pet.name} get adopted: {pet.fundsNeeded}
+            </li>
+              <button className="btn btn-primary">Donate</button>
             <li className="list-group-item">Available Since: {pet.availableSince}</li>
             <li className="list-group-item">Age: {pet.age}</li>
             <li className="list-group-item">Gender: {pet.gender}</li>
