@@ -46,7 +46,6 @@ class SinglePet extends React.Component {
             <li className="list-group-item">
               Funds Needed to help {pet.name} get adopted: {pet.fundsNeeded}
             </li>
-              <button className="btn btn-primary">Donate</button>
             <li className="list-group-item">Available Since: {pet.availableSince}</li>
             <li className="list-group-item">Age: {pet.age}</li>
             <li className="list-group-item">Gender: {pet.gender}</li>
